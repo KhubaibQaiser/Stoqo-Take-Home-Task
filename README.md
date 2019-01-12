@@ -1,0 +1,1 @@
+# Stoqo-Take-Home-Task
