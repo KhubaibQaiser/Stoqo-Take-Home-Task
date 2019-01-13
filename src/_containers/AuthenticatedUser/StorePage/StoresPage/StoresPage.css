@@ -1,0 +1,82 @@
+.StoresContainer {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.StoreItem {
+    cursor: pointer;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+    background: #fff;
+}
+
+.StoreItem:hover {
+    color: #000;
+    background-color: #fff3f0;
+}
+
+.t-col {
+    flex: 1;
+    padding: 0 10px;
+    min-width: 110px;
+    font-family: 'museo_sans300';
+    font-weight: 300;
+}
+
+.t-body .t-col {
+    word-break: break-all;
+}
+
+.t-col.t-col-s {
+    min-width: 50px;
+    max-width: 50px;
+    font-weight: 900;
+}
+
+.t-head {
+    padding: 15px 0;
+    background: #ff6e40;
+    color: #fff;
+    font-weight: 700;
+    flex: 0 0 54px;
+    max-height: 54px;
+    border-radius: 0.375rem 0.375rem 0 0;
+}
+
+.t-head .t-col {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'museo_sans700';
+    font-weight: 700;
+}
+
+.t-col.type-col {
+    max-width: 120px;
+    text-transform: capitalize;
+}
+
+.FilterContainer {
+    padding: 15px 0;
+}
+
+.Filter {
+    float: right;
+    font-family: 'museo_sans500';
+}
+
+.Filter select {
+    margin-left: 10px;
+    text-transform: capitalize;
+    padding: 5px;
+    border-radius: 4px;
+    min-width: 120px;
+}
+
+.StoreTableContainer {
+    overflow-x: auto;
+}
+
+.StoreTableWrapper {
+    display: table;
+}

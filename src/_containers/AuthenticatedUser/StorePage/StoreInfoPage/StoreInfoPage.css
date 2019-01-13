@@ -1,0 +1,19 @@
+.StoreInfo .HeaderLabel {
+    padding: 20px 0;
+    border-bottom: 0.125rem solid #ff6e40;
+    font-family: 'museo_sans900';
+    font-size: 1.125rem;
+    font-weight: 900;
+}
+
+.StoreInfo .InfoRow {
+    padding: 10px 0;
+    font-family: 'museo_sans500';
+    font-weight: 500;
+    background: #fff;
+    margin-bottom: 0.0625rem;
+}
+
+.StoreInfo .InfoRow:nth-last-of-type(odd) {
+    background: #dee2e6;
+}

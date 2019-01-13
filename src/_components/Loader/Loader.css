@@ -1,0 +1,130 @@
+.Loader {
+    background: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Loader .loader-msg-overlay {
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+}
+
+.Loader .loader-msg-wrapper {
+    background: #fff;
+    border-radius: 6px;
+    max-width: 90%;
+    margin-right: 55%;
+    max-height: 315px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.Loader .loader-msg {
+    padding: 45px 30px 15px 30px;
+}
+
+.Loader .go-offline-msg {
+    padding: 15px 15px 15px 15px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: .9375rem;
+    color: #f88808;
+    /* font-family: 'museo_sans300', sans-serif;
+    font-weight: 300; */
+}
+
+.close-btn .fa {
+    font-size: 12px;
+}
+
+.Loader .RetryMessageBox {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #4f616b;
+    margin: 0 auto;
+    padding: 15px;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'museo_sans500' !important;
+    font-weight: 500;
+}
+
+.Loader .RetryMessageBox i {
+    font-size: 42px !important;
+    margin-bottom: 15px;
+}
+
+.Loader .spinner-wrapper {
+    height: 62px;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    margin-top: -31px;
+}
+
+.Loader .spinner,
+.Loader .spinner:after {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+}
+
+.Loader .spinner {
+    text-indent: -9999em;
+    position: relative;
+    margin: 0 auto;
+    border: 8px solid #b3b3b3;
+    border-radius: 50%;
+    border-top: 8px solid #555;
+    width: 60px;
+    height: 60px;
+    transform: translateZ(0);
+    animation: load8 1.3s linear infinite;
+}
+
+/*@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}*/
+
+@keyframes load8 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
